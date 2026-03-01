@@ -1,0 +1,14 @@
+# This file uses plz for task running (https://plzplz.org)
+# You can see the schema for this file by runnning `plz plz schema`
+
+# Install R dependencies
+[tasks.install]
+run = "Rscript -e 'install.packages(c(\"ggplot2\", \"showtext\", \"scales\", \"jsonlite\"), repos=\"https://cloud.r-project.org\")'"
+
+# Fetch/update CSVs from APIs
+[tasks.data]
+run = "Rscript data/fetch_api_data.R"
+
+# Regenerate all example chart PNGs
+[tasks.examples]
+run = "Rscript example.R"

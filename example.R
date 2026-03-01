@@ -1,0 +1,7 @@
+source("examples/bar.R")
+source("examples/bar-vertical.R")
+source("examples/line-area.R")
+source("examples/lines.R")
+source("examples/cleveland.R")
+source("examples/dumbbell.R")
+source("examples/strip.R")
